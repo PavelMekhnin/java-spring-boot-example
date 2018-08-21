@@ -1,8 +1,8 @@
 package kz.mekhnin.spring.headhunter.api.controllers;
 
 import kz.mekhnin.spring.headhunter.api.exception.CustomException;
-import kz.mekhnin.spring.headhunter.api.mappers.UserMapper;
-import kz.mekhnin.spring.headhunter.api.mappers.UserViewModelMapper;
+import kz.mekhnin.spring.headhunter.api.mappers.modelMappers.UserMapper;
+import kz.mekhnin.spring.headhunter.api.mappers.viewModelMappers.UserViewModelMapper;
 import kz.mekhnin.spring.headhunter.api.viewModels.UserViewModel;
 import kz.mekhnin.spring.headhunter.applicationServices.UserApplicationService;
 import kz.mekhnin.spring.headhunter.data.entities.User;

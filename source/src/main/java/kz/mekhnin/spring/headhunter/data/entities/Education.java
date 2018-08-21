@@ -15,8 +15,6 @@ public class Education {
     @GeneratedValue
     private Long id;
 
-    private Long cvId;
-
     @NotBlank
     private String title;
 
@@ -70,13 +68,5 @@ public class Education {
 
     public void setAreaOfStudy(String areaOfStudy) {
         this.areaOfStudy = areaOfStudy;
-    }
-
-    public Long getCvId() {
-        return cvId;
-    }
-
-    public void setCvId(Long cvId) {
-        this.cvId = cvId;
     }
 }

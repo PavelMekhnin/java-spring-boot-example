@@ -1,4 +1,4 @@
-package kz.mekhnin.spring.headhunter.api.mappers;
+package kz.mekhnin.spring.headhunter.api.mappers.modelMappers;
 
 import kz.mekhnin.spring.Common.interfaces.ModelMapper;
 import kz.mekhnin.spring.headhunter.api.viewModels.UserViewModel;

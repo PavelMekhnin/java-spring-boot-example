@@ -37,4 +37,12 @@ public class SkillTag {
     public void setCurriculumVitaes(List<CurriculumVitae> curriculumVitaes) {
         this.curriculumVitaes = curriculumVitaes;
     }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }

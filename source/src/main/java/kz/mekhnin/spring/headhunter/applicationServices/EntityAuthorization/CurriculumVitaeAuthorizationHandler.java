@@ -5,7 +5,7 @@ import kz.mekhnin.spring.headhunter.data.entities.CurriculumVitae;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CurriculumVitaeAthorizationHandler implements EntityAuthorizationHandler<CurriculumVitae>{
+public class CurriculumVitaeAuthorizationHandler implements EntityAuthorizationHandler<CurriculumVitae>{
     @Override
     public boolean authorize(
             Long currentUserId,

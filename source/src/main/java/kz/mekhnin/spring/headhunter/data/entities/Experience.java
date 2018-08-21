@@ -16,8 +16,6 @@ public class Experience {
     @GeneratedValue
     private Long id;
 
-    private Long cvId;
-
     @NotBlank
     private String title;
 
@@ -92,13 +90,5 @@ public class Experience {
 
     public void setCity(City city) {
         this.city = city;
-    }
-
-    public Long getCvId() {
-        return cvId;
-    }
-
-    public void setCvId(Long cvId) {
-        this.cvId = cvId;
     }
 }

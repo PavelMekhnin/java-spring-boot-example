@@ -1,6 +1,6 @@
 package kz.mekhnin.spring.headhunter.api.controllers;
 
-import kz.mekhnin.spring.headhunter.api.mappers.AccountCredentialsMaper;
+import kz.mekhnin.spring.headhunter.api.mappers.modelMappers.AccountCredentialsMaper;
 import kz.mekhnin.spring.headhunter.api.viewModels.AccountCredentialsViewModel;
 import kz.mekhnin.spring.headhunter.applicationServices.AuthApplicationService;
 import kz.mekhnin.spring.headhunter.data.entities.User;
