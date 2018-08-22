@@ -4,5 +4,5 @@ import kz.mekhnin.spring.headhunter.api.security.ActionType;
 
 public interface EntityAuthorizationHandler<TEntity> {
 
-    boolean authorize(Long currentUserId, TEntity entity, ActionType action);
+    boolean authorize(Long currentUserId, TEntity entity, ActionType[] actions);
 }

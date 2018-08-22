@@ -1,12 +1,12 @@
 package kz.mekhnin.spring.headhunter.api.mappers.modelMappers;
 
 import kz.mekhnin.spring.Common.interfaces.ModelFactory;
-import kz.mekhnin.spring.headhunter.api.viewModels.AccountCredentialsViewModel;
+import kz.mekhnin.spring.headhunter.api.viewModels.request.AccountCredentialsViewModel;
 import kz.mekhnin.spring.headhunter.data.entities.User;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AccountCredentialsMaper implements ModelFactory<AccountCredentialsViewModel, User> {
+public class AccountCredentialsMapper implements ModelFactory<AccountCredentialsViewModel, User> {
 
     @Override
     public User create(AccountCredentialsViewModel accountCredentialsViewModel) {

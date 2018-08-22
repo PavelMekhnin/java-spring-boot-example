@@ -18,12 +18,12 @@ public class Country {
 
     @OneToMany(
             mappedBy = "country",
-            cascade = CascadeType.ALL,
+            cascade = CascadeType.MERGE,
             fetch = FetchType.LAZY,
-            orphanRemoval = true
-            ,targetEntity = City.class
+            orphanRemoval = true,
+            targetEntity = City.class
     )
-    private List<City> cities;
+    private List<City> cities = new ArrayList<>();
 
     public String getName() {
         return name;
@@ -45,7 +45,19 @@ public class Country {
         return cities;
     }
 
-    public void setCities(List<City> cities) {
-        this.cities = cities;
+    public void addCity(City city) {
+        if(this.cities.contains(city)){
+            return;
+        }
+        this.cities.add(city);
+        city.setCountry(this);
+    }
+
+    public void removeCity(City city){
+        if(!this.cities.contains(city)){
+            return;
+        }
+        this.cities.remove(city);
+        city.setCountry(null);
     }
 }

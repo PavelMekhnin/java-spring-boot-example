@@ -1,4 +1,4 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
 import java.util.Date;
 import java.util.UUID;

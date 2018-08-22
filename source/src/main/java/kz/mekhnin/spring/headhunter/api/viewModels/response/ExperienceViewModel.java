@@ -1,4 +1,4 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
 import java.util.Date;
 
@@ -15,9 +15,7 @@ public class ExperienceViewModel {
 
     private Date endDate;
 
-    private CityViewModel city;
-
-    private CountryViewModel country;
+    private Long city;
 
     public Long getId() {
         return id;
@@ -67,19 +65,11 @@ public class ExperienceViewModel {
         this.endDate = endDate;
     }
 
-    public CityViewModel getCity() {
+    public Long getCity() {
         return city;
     }
 
-    public void setCity(CityViewModel city) {
+    public void setCity(Long city) {
         this.city = city;
-    }
-
-    public CountryViewModel getCountry() {
-        return country;
-    }
-
-    public void setCountry(CountryViewModel country) {
-        this.country = country;
     }
 }

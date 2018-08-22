@@ -1,6 +1,8 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
-public class CityViewModel {
+import java.util.List;
+
+public class CountryViewModel {
 
     private Long id;
 

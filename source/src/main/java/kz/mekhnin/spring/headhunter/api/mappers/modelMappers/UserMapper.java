@@ -1,7 +1,7 @@
 package kz.mekhnin.spring.headhunter.api.mappers.modelMappers;
 
 import kz.mekhnin.spring.Common.interfaces.ModelMapper;
-import kz.mekhnin.spring.headhunter.api.viewModels.UserViewModel;
+import kz.mekhnin.spring.headhunter.api.viewModels.response.UserViewModel;
 import kz.mekhnin.spring.headhunter.data.entities.User;
 import org.springframework.stereotype.Component;
 

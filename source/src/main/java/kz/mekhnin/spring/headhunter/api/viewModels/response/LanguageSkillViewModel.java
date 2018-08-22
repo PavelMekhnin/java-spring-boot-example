@@ -1,4 +1,4 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
 public class LanguageSkillViewModel {
     private Long id;

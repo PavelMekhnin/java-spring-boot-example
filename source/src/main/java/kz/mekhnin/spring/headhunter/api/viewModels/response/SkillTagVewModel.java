@@ -1,6 +1,6 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
-public class LanguageViewModel {
+public class SkillTagVewModel {
     private Long id;
 
     private String title;

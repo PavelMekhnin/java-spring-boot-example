@@ -1,4 +1,4 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.request;
 
 // Account credentials to login
 public class AccountCredentialsViewModel {

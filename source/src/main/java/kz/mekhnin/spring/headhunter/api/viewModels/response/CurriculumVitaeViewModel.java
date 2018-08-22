@@ -1,5 +1,6 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class CurriculumVitaeViewModel {
@@ -9,7 +10,7 @@ public class CurriculumVitaeViewModel {
 
     private String summary;
 
-    private List<EducationViewModel> educations;
+    private List<EducationViewModel> educations = new ArrayList<>();
 
     private List<ExperienceViewModel> experiences;
 

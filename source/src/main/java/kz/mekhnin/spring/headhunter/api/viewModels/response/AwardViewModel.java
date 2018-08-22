@@ -1,12 +1,10 @@
-package kz.mekhnin.spring.headhunter.api.viewModels;
+package kz.mekhnin.spring.headhunter.api.viewModels.response;
 
-public class EducationViewModel {
+public class AwardViewModel {
 
     private Long id;
 
     private String title;
-
-    private String areaOfStudy;
 
     private String description;
 
@@ -24,14 +22,6 @@ public class EducationViewModel {
 
     public void setTitle(String title) {
         this.title = title;
-    }
-
-    public String getAreaOfStudy() {
-        return areaOfStudy;
-    }
-
-    public void setAreaOfStudy(String areaOfStudy) {
-        this.areaOfStudy = areaOfStudy;
     }
 
     public String getDescription() {

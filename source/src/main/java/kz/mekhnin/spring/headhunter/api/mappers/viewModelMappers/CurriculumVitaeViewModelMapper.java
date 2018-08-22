@@ -1,7 +1,7 @@
 package kz.mekhnin.spring.headhunter.api.mappers.viewModelMappers;
 
 import kz.mekhnin.spring.Common.interfaces.ModelFactory;
-import kz.mekhnin.spring.headhunter.api.viewModels.CurriculumVitaeViewModel;
+import kz.mekhnin.spring.headhunter.api.viewModels.response.CurriculumVitaeViewModel;
 import kz.mekhnin.spring.headhunter.data.entities.CurriculumVitae;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -36,8 +36,8 @@ public class CurriculumVitaeViewModelMapper implements ModelFactory<CurriculumVi
         result.setAwards(curriculumVitae.getAwards().stream().map(x -> awardViewModelMapper.create(x)).collect(Collectors.toList()));
         result.setEducations(curriculumVitae.getEducations().stream().map(x -> educationViewModelMapper.create(x)).collect(Collectors.toList()));
         result.setExperiences(curriculumVitae.getExperiences().stream().map(x -> experienceViewModelMapper.create(x)).collect(Collectors.toList()));
-        result.setLanguageSkills(curriculumVitae.getLanguageSkills().stream().map(x -> languageSkillViewModelMapper.create(x)).collect(Collectors.toList()));
-        result.setSkillTags(curriculumVitae.getSkillTags().stream().map(x -> skillTagViewModelMapper.create(x)).collect(Collectors.toList()));
+        //result.setLanguageSkills(curriculumVitae.getLanguageSkills().stream().map(x -> languageSkillViewModelMapper.create(x)).collect(Collectors.toList()));
+        //result.setSkillTags(curriculumVitae.getSkillTags().stream().map(x -> skillTagViewModelMapper.create(x)).collect(Collectors.toList()));
 
         return result;
     }

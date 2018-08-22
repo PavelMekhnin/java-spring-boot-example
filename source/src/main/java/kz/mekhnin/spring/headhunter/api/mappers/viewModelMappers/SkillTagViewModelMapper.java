@@ -1,7 +1,7 @@
 package kz.mekhnin.spring.headhunter.api.mappers.viewModelMappers;
 
 import kz.mekhnin.spring.Common.interfaces.ModelFactory;
-import kz.mekhnin.spring.headhunter.api.viewModels.SkillTagVewModel;
+import kz.mekhnin.spring.headhunter.api.viewModels.response.SkillTagVewModel;
 import kz.mekhnin.spring.headhunter.data.entities.SkillTag;
 import org.springframework.stereotype.Component;
 

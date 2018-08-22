@@ -10,16 +10,19 @@ public class CurriculumVitaeAuthorizationHandler implements EntityAuthorizationH
     public boolean authorize(
             Long currentUserId,
             CurriculumVitae curriculumVitae,
-            ActionType action
+            ActionType[] actions
     ) {
-        // Owner has full access
-        if(currentUserId == curriculumVitae.getUser().getId()){
-            return true;
-        }
+        for (ActionType action: actions
+             ) {
+            // Owner has full access
+            if(currentUserId == curriculumVitae.getUser().getId()){
+                return true;
+            }
 
-        // others can read only
-        if (action != ActionType.Read){
-            return false;
+            // others can read only
+            if (action != ActionType.Read){
+                return false;
+            }
         }
 
         return true;
